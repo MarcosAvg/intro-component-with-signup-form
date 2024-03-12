@@ -115,6 +115,7 @@ body {
     box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.2);
 }
 
+/*--Terms--*/
 .terms {
     font-size: 1rem;
     text-align: center;
@@ -125,4 +126,51 @@ body {
 .terms__highlight {
     color: var(--red);
     font-weight: 700;
+}
+
+.form__input {
+    
+}
+
+/*--mediaQuerys*/
+
+@media (min-width: 1200px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15rem 25rem;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__phrase {
+        text-align: left;
+        font-size: 7rem;
+    }
+
+    .header__text {
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    .form {
+        padding: 4rem;
+    }
+
+    .fieldset {
+        gap: 3rem;
+    }
+
+    .form__input, .form__claim {
+        height: 7rem;
+    }
+
+    .terms {
+        font-size: 1.5rem;
+    }
 }
